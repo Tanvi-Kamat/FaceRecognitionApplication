@@ -1,0 +1,22 @@
+<!-- telling browser to expect html code -->
+<!DOCTYPE html>
+<html>
+<!-- title on browser tab -->
+<head>
+<title>Upload image</title>
+</head>
+
+<!-- header on the webpage -->
+<h1 style="text-align:center">Upload Your Image</h1>
+
+<body>
+<!-- go to this page when submit button is hit -->
+<form action="http://localhost:5000/uploadedimage" method="POST" enctype="multipart/form-data">
+    <!-- when choose file button is hit, open user's local files -->
+    <!-- create place to store a file -->
+    <input type="file" name = "file"/>
+    <!-- create submit button -->
+    <input type="submit"/>
+</form>
+</body>
+</html>
